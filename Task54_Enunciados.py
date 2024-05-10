@@ -11,7 +11,7 @@ numero_inteiro = None
 while numero_inteiro is None:
     numero_inteiro = input("Digite um número inteiro: ")
 
-    if numero_inteiro.isdigit == True:
+    if numero_inteiro.isdigit() == True:
         numero_inteiro = int(numero_inteiro)
         if numero_inteiro % 2 == 1:
             print(f"O {numero_inteiro} é ímpar")
