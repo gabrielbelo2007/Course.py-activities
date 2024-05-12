@@ -38,5 +38,4 @@ while tentativas > 0:
         print(f"Você tem {tentativas} tentativas, sua palavra: {descoberto}")
     
 else:
-    secreto_str = "".join(secreto)
-    print("Suas tentativas acabaram a palavra era:", secreto_str)
+    print("Suas tentativas acabaram a palavra era:", secreto)
