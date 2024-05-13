@@ -1,9 +1,9 @@
-secreto = 'gostosa'
+secreto = 'teste'
 digitadas = []
 chances = 5
 
 while True:
-    if chances <= 0:
+    if chances == 0:
         print('Você perdeu!')
         break
 
@@ -24,7 +24,7 @@ while True:
 
     descoberto = ''
 
-    for letra_secreta in secreto: # g
+    for letra_secreta in secreto: # E
         if letra_secreta in digitadas: # True
             descoberto += letra_secreta # g
         else:

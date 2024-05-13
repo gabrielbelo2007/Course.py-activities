@@ -20,22 +20,22 @@ while tentativas > 0:
                 descoberto[indice] = letra 
         
     else:
-        print("Você já usou essa letra")
+        print("Você já usou essa letra!")
 
     letras_usadas += letra
     
     if letra not in secreto:
+        print(f"A letra: '{letra}' não existe na palavra secreta. Você perdeu uma tentativa!")
         tentativas -= 1
     else:
-        print(f"A letra: {letra}, existe na palavra secreta")
+        print(f"A letra: '{letra}', existe na palavra secreta.")
 
     if descoberto == list(secreto):
-        descoberto_str = "".join(descoberto)
-        print(f"Parabéns você acertou a palavra era: {descoberto_str}")
+        print(f"Parabéns você acertou a palavra era: '{secreto}'.")
         break
     
     else:
-        print(f"Você tem {tentativas} tentativas, sua palavra: {descoberto}")
+        print(f"Você ainda tem {tentativas} tentativas, sua palavra até agora é: {descoberto}.")
     
 else:
-    print("Suas tentativas acabaram a palavra era:", secreto)
+    print("Suas tentativas acabaram a palavra era:", secreto, ".")
