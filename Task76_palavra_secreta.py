@@ -1,3 +1,5 @@
+import os
+
 secreto = "teste"
 descoberto = []
 letras_usadas = ""
@@ -7,7 +9,7 @@ tentativas = 3
 for caracter in secreto:
     descoberto += "*"
 
-print(f"A palavra secreta tem: {len(secreto)} letras")
+print(f"A palavra secreta tem: {len(secreto)} letras. você tem {tentativas} tentativas")
 
 while tentativas > 0:
     
@@ -36,11 +38,13 @@ while tentativas > 0:
         print(f"A letra: '{letra}', existe na palavra secreta.")
 
         if descoberto == list(secreto):
-            print(f"Parabéns você acertou a palavra era: '{secreto}'.")
+            os.system("cls")
+            print(f"Parabéns você acertou a palavra era: '{secreto}'! Você ainda tinha: {tentativas} tentativas.")
             break
         
         print(f"Você ainda tem {tentativas} tentativas, sua palavra até agora é: {descoberto}.")
 
 # Só executado quando o usuário perde       
 else:
+    os.system("cls")
     print("Suas tentativas acabaram a palavra era:", secreto, ".")
