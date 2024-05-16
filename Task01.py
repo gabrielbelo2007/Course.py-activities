@@ -51,3 +51,6 @@ elif 5 <= tamanho <= 6:
 else:
     print('Seu nome é muito longo.')
 """
+
+resultado = 2590 % 11
+print(resultado)
